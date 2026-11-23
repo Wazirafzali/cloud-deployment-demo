@@ -1,7 +1,11 @@
 const metrics = [
   { label: "Framework", value: "Next.js 16", detail: "React Framework" },
   { label: "Container", value: "Docker", detail: "Containerized Application" },
-  { label: "Environment", value: "Local", detail: "Development Environment" },
+  {
+    label: "Environment",
+    value: "Production",
+    detail: "Vercel Cloud Environment",
+  },
   { label: "Version", value: "1.0.0", detail: "Demo Release" },
 ];
 
@@ -151,7 +155,9 @@ export default function Home() {
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-slate-400">Cloud Deployment</dt>
-                <dd className="font-medium text-amber-400">Not yet deployed</dd>
+                <dd className="font-medium text-green-400">
+                  Deployed on Vercel
+                </dd>
               </div>
             </dl>
           </div>
